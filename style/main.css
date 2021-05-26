@@ -1,0 +1,165 @@
+/* Declaração de variáveis */
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+/* Isso é útil para padronizar as condições de cada navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+  background: var(--preta);
+  font-family: arial, sans-serif, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-top: 5px;
+  color: var(--vermelho);
+  font-family: "Arial";
+  font-size: 50px;
+}
+
+header .lema {
+  color: rgb(156, 156, 156);
+  font-size: 15px;
+  font-family: sans-serif;
+  padding-bottom: 5px;
+  font-weight: lighter;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+  margin-right: 40px;
+  font-size: 26px;
+}
+
+header nav a:hover {
+  color: #ffff;
+  transition: 500ms ease all;
+}
+
+main .container {
+  margin-left: 10px;
+}
+
+/* Filme principal */
+.filme-principal {
+  font-size: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/a-casa-xxl.jpg");
+  background-position: center;
+
+  height: 1050px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .container {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.titulo {
+  /*margin-top: 10%;*/
+  margin-bottom: 3%;
+  font-size: 60px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.atores {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.diretores {
+  font-size: 20px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .container div {
+  width: 100%;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: var(--preta);
+}
+
+.botao i {
+  margin-right: 20px;
+}
+
+.ver-filmes {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  font-size: 60px;
+  align-items: center;
+  margin-top: 10px;
+  align-self: center;
+
+  margin-block-start: 200px;
+  padding-top: 10px;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.ver-filmes:hover {
+  background-color: white;
+  color: var(--preta);
+  transform: translateY(20px);
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
